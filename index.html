@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>♥ ♦ Symbol Pencil Sketch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>♥ ♦ Symbol Pencil Sketch</h2>
+
+<div class="controls">
+  <input type="file" id="upload" accept="image/*">
+
+  <label>
+    Detail
+    <input type="range" id="detail" min="4" max="12" value="6">
+  </label>
+
+  <label>
+    Contrast
+    <input type="range" id="contrast" min="50" max="200" value="120">
+  </label>
+
+  <label>
+    Dark Paper
+    <input type="checkbox" id="darkPaper">
+  </label>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<video id="video" autoplay hidden></video>
+
+<script src="script.js"></script>
+</body>
+</html>
